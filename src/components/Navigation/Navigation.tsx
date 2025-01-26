@@ -36,15 +36,15 @@ const Navigation = () => {
 							<svg className={s.Navigation__container_address_icon}>
 								<use href="/symbol-defs.svg#icon-tel"></use>
 							</svg>
-							<Link href="mailto:lloydjefferson@gmail.com">
-								lloydjefferson@gmail.com
+							<Link href="mailto:VentilationKyiv@ukr.net">
+								VentilationKyiv@ukr.net
 							</Link>
 						</li>
 						<li className={s.Navigation__container_address_item}>
 							<svg className={s.Navigation__container_address_icon}>
 								<use href="/symbol-defs.svg#icon-email"></use>
 							</svg>
-							<Link href="tel:+3801111111111">+380 11 1111 11 11</Link>
+							<Link href="tel:+380935482200">+380 (93) 548-22-00</Link>
 						</li>
 					</ul>
 				</address>

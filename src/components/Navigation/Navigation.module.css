@@ -48,8 +48,8 @@
 }
 .Navigation__container_address_icon {
 	fill: var(--background-button);
-	width: 32px;
-	height: 32px;
+	width: 25px;
+	height: 25px;
 }
 @media screen and (min-width: 1440px) {
 	.Navigation__container_nav_item,
