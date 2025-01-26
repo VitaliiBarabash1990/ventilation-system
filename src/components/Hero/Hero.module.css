@@ -1,0 +1,160 @@
+.Hero__section_title {
+	font-family: var(--third-family);
+	font-weight: 600;
+	font-size: 48px;
+	color: var(--white);
+}
+.Hero__section_text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 32px;
+	color: var(--white);
+}
+.Hero__section_info_descr_title {
+	font-family: var(--third-family);
+	font-weight: 600;
+	font-size: 24px;
+	color: var(--white);
+}
+.Hero__section_info_descr_text {
+	font-family: var(--third-family);
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--white);
+}
+.Hero__section_button {
+	font-family: var(--font4);
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: var(--white);
+	border-radius: 8px;
+	/* width: 280px; */
+	height: 60px;
+	background: #ff6a03;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.Hero__section_button::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -100%;
+	width: 200%;
+	height: 300%;
+	background: rgba(255, 255, 255, 0.2);
+	transform: rotate(45deg);
+	transition: all 0.3s ease;
+}
+
+.Hero__section_button:hover::before {
+	left: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.Hero__section_button:hover {
+	transform: scale(1.05); /* Увеличиваем кнопку */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Hero__section_button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.Hero__section_button_icon {
+	width: 23px;
+	height: 23px;
+}
+
+@media screen and (min-width: 1440px) {
+	.Hero__section_title {
+		font-size: 48px;
+	}
+	.Hero__section_text {
+		font-size: 32px;
+	}
+	.Hero__section_info_descr_title {
+		font-size: 24px;
+	}
+	.Hero__section_info_descr_text {
+		font-size: 20px;
+	}
+	.Hero__section {
+		background-image: url("/Hero-Section.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: -100px;
+	}
+	.Hero__section_wraper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px;
+	}
+	.Hero__section_info {
+		text-align: left;
+		width: 60%;
+	}
+	.Hero__section_title {
+		margin-bottom: 24px;
+	}
+	.Hero__section_text {
+		margin-bottom: 32px;
+	}
+	.Hero__section_list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 48px;
+	}
+	.Hero__section_item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+	}
+	.Hero__section_info_descr {
+		text-align: left;
+	}
+
+	.Hero__section_item_icon {
+		width: 40px;
+		height: 40px;
+		stroke: #ff6a03;
+		fill: none;
+	}
+	.Hero__section_button {
+		padding-left: 20px;
+		padding-right: 12px;
+		min-width: 280px;
+		height: 60px;
+	}
+}
+
+/* .Hero__section_img {
+		background-image: url("/img/ventiliation_x1.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 518px;
+		aspect-ratio: 4 / 2.3;
+	}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 100vh),
+	(min-resolution: 192dpi) and (max-width: 100vh) {
+	.Hero__section_img {
+		background-image: url("/img/ventiliation_x2.png");
+	}
+} */
