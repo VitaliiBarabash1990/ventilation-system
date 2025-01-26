@@ -1,5 +1,7 @@
 .Footer__section {
 	background-color: var(--background-footer);
+	padding-top: 54px;
+	padding-bottom: 54px;
 }
 .Footer__section_title {
 	font-family: var(--font-family);

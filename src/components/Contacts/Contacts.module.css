@@ -1,0 +1,102 @@
+.Contacts__section {
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+.Contacts__section_title {
+	font-family: var(--third-family);
+	font-weight: 400;
+	font-size: 40px;
+	text-align: center;
+	color: var(--text-title-color);
+}
+.Contacts__section_map {
+	max-width: 862px;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+.Contacts__section_icon {
+	width: 48px;
+	height: 48px;
+	fill: none;
+	stroke: var(--background-button);
+}
+
+.Contacts__section_item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 24px;
+}
+.Contacts__section_text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	color: var(--text-map);
+}
+.Contacts__section_text_email {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 24px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	text-align: center;
+	color: #080909;
+}
+.Contacts__section_list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+}
+.Contacts__section_soc_icon_item {
+	border-radius: 8px;
+	padding: 16px 32px;
+	width: 407px;
+	height: 59px;
+}
+.Contacts__section_soc_color_fiolet {
+	border: 1px solid var(--color-fiolet);
+}
+.Contacts__section_soc_color_blue {
+	border: 1px solid var(--color-blue);
+}
+.Contacts__section_soc_color_green {
+	border: 1px solid var(--color-green);
+}
+.Contacts__section_soc_text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	color: var(--black);
+}
+.Contacts__section_link_soc {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+.Contacts__container_soc_icon {
+	width: 24px;
+	height: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+	.Contacts__section {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+	.Contacts__section_title {
+		font-size: 40px;
+		margin-bottom: 48px;
+	}
+	.Contacts__section_container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 72px;
+	}
+}

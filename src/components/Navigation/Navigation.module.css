@@ -1,5 +1,5 @@
 .Navigation__container {
-	height: 100px;
+	min-height: 100px;
 	z-index: 999;
 	display: flex;
 	align-items: center;
