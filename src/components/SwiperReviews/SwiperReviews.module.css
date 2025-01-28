@@ -1,4 +1,81 @@
-.Swiper__block {
+.Swiper__reviews_slide {
+	box-shadow: 4px 4px 25px 5px rgba(0, 0, 0, 0.1);
+	background: var(--white);
+	min-width: 100px;
+}
+.Swiper__reviews_slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 26px;
+}
+.Swiper__swiper {
+	padding: 15px;
+	padding-bottom: 60px;
+}
+
+/* itemreviews */
+.Swiper__reviews_item_head {
 	display: flex;
 	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+.Swiper__reviews_item {
+	width: 100%;
+	height: 534px;
+}
+.Swiper__reviews_list_star {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 0;
+}
+.Swiper__reviews_list_star_icon {
+	width: 38px;
+	height: 38px;
+	fill: var(--color-star);
+}
+
+.Swiper__reviews_item_head_G {
+	width: 47px;
+	height: 47px;
+}
+.Swiper__reviews_bloquote {
+	width: 50px;
+	height: 37px;
+	fill: var(--color-bloquote);
+	margin-bottom: 30px;
+}
+.Swiper__reviews_text {
+	text-align: left;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 167%;
+	color: var(--color-text);
+	margin-bottom: 50px;
+}
+.Swiper__reviews_client {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+}
+.Swiper__reviews_client_overflov {
+	width: 66px; /* Ширина блока */
+	height: 66px; /* Высота блока */
+	border-radius: 50%; /* Делает блок круглым */
+	overflow: hidden; /* Скрывает всё за границами блока */
+	display: flex; /* Для центрирования изображения */
+	align-items: center; /* Центрирование по вертикали */
+	justify-content: center; /* Центрирование по горизонтали */
+}
+.Swiper__reviews_title {
+	font-family: var(--font4);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 167%;
+	color: var(--color-text);
 }

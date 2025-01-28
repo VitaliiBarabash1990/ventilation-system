@@ -20,6 +20,9 @@
 :root {
 	--white: #fff;
 	--black: #000;
+	--color-star: #ffde4b;
+	--color-bloquote: #e4e4e4;
+	--color-text: #2f2f2f;
 	--background-button: #ff6a03;
 	--background-footer: #031131;
 	--text-title-color: #232323;
