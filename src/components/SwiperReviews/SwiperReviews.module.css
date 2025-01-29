@@ -8,10 +8,8 @@
 	align-items: center;
 	justify-content: center;
 	padding: 26px;
-}
-.Swiper__swiper {
-	padding: 15px;
-	padding-bottom: 60px;
+	margin: 20px 7px 56px;
+	max-width: calc((100% - 40px) / 3);
 }
 
 /* itemreviews */
@@ -24,7 +22,11 @@
 }
 .Swiper__reviews_item {
 	width: 100%;
-	height: 534px;
+	min-height: 480px;
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+	justify-content: space-between;
 }
 .Swiper__reviews_list_star {
 	display: flex;
@@ -55,7 +57,7 @@
 	font-size: 18px;
 	line-height: 167%;
 	color: var(--color-text);
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
 .Swiper__reviews_client {
 	display: flex;
