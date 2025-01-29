@@ -1,0 +1,32 @@
+.Partners__section_title {
+	font-family: var(--third-family);
+	font-weight: 400;
+	font-size: 40px;
+	color: var(--text-title-color);
+}
+.Partners__section_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+	max-width: 1440px;
+}
+
+.Partners__section_item {
+	flex: 1 1 calc(20% - 40px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 210px;
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.Partners__section_item_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 78px;
+}

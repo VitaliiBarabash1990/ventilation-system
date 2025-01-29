@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SwiperRevievsItem from "./SwiperRevievsItem.jsx";
+import SwiperRevievsItem from "./SwiperRevievsItem";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";

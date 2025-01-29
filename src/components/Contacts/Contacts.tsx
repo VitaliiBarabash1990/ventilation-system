@@ -3,7 +3,7 @@ import s from "./Contacts.module.css";
 
 const Contacts = () => {
 	return (
-		<div className={`section ${s.Contacts__section}`}>
+		<div id="Contacts" className={`section ${s.Contacts__section}`}>
 			<div className="container">
 				<div className={s.Contacts__section_wraper}>
 					<h2 className={s.Contacts__section_title}>Контакти</h2>

@@ -1,13 +1,26 @@
 import s from "./SwiperReviews.module.css";
 
-const SwiperRevievsItem = ({ data }) => {
+interface ReviewData {
+	text: string;
+	img: string;
+	name: string;
+}
+
+const SwiperRevievsItem = ({ data }: { data: ReviewData }) => {
 	const { text, img, name } = data;
 	return (
 		<>
 			<div className={s.Swiper__reviews_block}>
 				<div className={s.Swiper__reviews_item_head}>
 					<ul className={s.Swiper__reviews_list_star}>
-						<li className={s.Swiper__reviews_item_star}>
+						{[...Array(5)].map((_, index) => (
+							<li key={index} className={s.Swiper__reviews_item_star}>
+								<svg className={s.Swiper__reviews_list_star_icon}>
+									<use href="/symbol-defs.svg#icon-star"></use>
+								</svg>
+							</li>
+						))}
+						{/* <li className={s.Swiper__reviews_item_star}>
 							<svg className={s.Swiper__reviews_list_star_icon}>
 								<use href="/symbol-defs.svg#icon-star"></use>
 							</svg>
@@ -31,7 +44,7 @@ const SwiperRevievsItem = ({ data }) => {
 							<svg className={s.Swiper__reviews_list_star_icon}>
 								<use href="/symbol-defs.svg#icon-star"></use>
 							</svg>
-						</li>
+						</li> */}
 					</ul>
 					<svg className={s.Swiper__reviews_item_head_G}>
 						<use href="/symbol-defs.svg#icon-google_logo"></use>
