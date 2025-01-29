@@ -1,0 +1,12 @@
+.OurWorks__section_title {
+	font-family: var(--third-family);
+	font-weight: 400;
+	font-size: 40px;
+	text-align: center;
+	color: #232323;
+	margin-bottom: 48px;
+}
+
+.OurWorks__reviews_slide {
+	margin-bottom: 48px;
+}

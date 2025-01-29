@@ -1,0 +1,50 @@
+[
+	{
+		"img1x": "/img/image1_x1.png 1x, /img/image1_x2.png 2x",
+		"img2x": "/img/image1_x2.png"
+	},
+	{
+		"img1x": "/img/image2_x1.png 1x, /img/image2_x2.png 2x",
+		"img2x": "/img/image2_x2.png"
+	},
+	{
+		"img1x": "/img/image3_x1.png 1x, /img/image3_x2.png 2x",
+		"img2x": "/img/image3_x2.png"
+	},
+	{
+		"img1x": "/img/image4_x1.png 1x, /img/image4_x2.png 2x",
+		"img2x": "/img/image4_x2.png"
+	},
+	{
+		"img1x": "/img/image5_x1.png 1x, /img/image5_x2.png 2x",
+		"img2x": "/img/image5_x2.png"
+	},
+	{
+		"img1x": "/img/image6_x1.png 1x, /img/image6_x2.png 2x",
+		"img2x": "/img/image6_x2.png"
+	},
+	{
+		"img1x": "/img/image7_x1.png 1x, /img/image7_x2.png 2x",
+		"img2x": "/img/image7_x2.png"
+	},
+	{
+		"img1x": "/img/image8_x1.png 1x, /img/image8_x2.png 2x",
+		"img2x": "/img/image8_x2.png"
+	},
+	{
+		"img1x": "/img/image9_x1.png 1x, /img/image9_x2.png 2x",
+		"img2x": "/img/image9_x2.png"
+	},
+	{
+		"img1x": "/img/image10_x1.png 1x, /img/image10_x2.png 2x",
+		"img2x": "/img/image10_x2.png"
+	},
+	{
+		"img1x": "/img/image11_x1.png 1x, /img/image11_x2.png 2x",
+		"img2x": "/img/image11_x2.png"
+	},
+	{
+		"img1x": "/img/image12_x1.png 1x, /img/image12_x2.png 2x",
+		"img2x": "/img/image12_x2.png"
+	}
+]
