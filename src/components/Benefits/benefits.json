@@ -1,0 +1,32 @@
+[
+	{
+		"img": "/symbol-defs.svg#icon-eva_lock-fill",
+		"title": "Зручність",
+		"text": "Комплексний підхід від концепції до запуску"
+	},
+	{
+		"img": "/symbol-defs.svg#icon-fa_handshake-o",
+		"title": "Час",
+		"text": "Чіткі строки виконання проектування та монтажу"
+	},
+	{
+		"img": "/symbol-defs.svg#icon-fa_hourglass-1",
+		"title": "Гарантія",
+		"text": "На обладнання та якість виконаних робіт"
+	},
+	{
+		"img": "/symbol-defs.svg#icon-fa_thumbs-o-up",
+		"title": "Підтримка",
+		"text": "Сервісне супроводження після запуску"
+	},
+	{
+		"img": "/symbol-defs.svg#icon-fa_wrench",
+		"title": "Надійність",
+		"text": "Надаємо кошторис робіт та працюємо за договором"
+	},
+	{
+		"img": "/symbol-defs.svg#icon-fa_certificate",
+		"title": "Європейська якість",
+		"text": "Вся продукція сертифікована від перевірених брендів"
+	}
+]
