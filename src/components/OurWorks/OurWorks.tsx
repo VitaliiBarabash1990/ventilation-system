@@ -11,7 +11,7 @@ import imgs from "./imgs.json";
 
 const OurWorks = () => {
 	return (
-		<div className={`section ${s.OurWorks__section}`}>
+		<div id="OurWorks" className={`section ${s.OurWorks__section}`}>
 			<div className="container">
 				<h2 className={s.OurWorks__section_title}>Наші роботи</h2>
 
@@ -43,10 +43,3 @@ const OurWorks = () => {
 };
 
 export default OurWorks;
-
-{
-	/* <source
-						srcSet="/img/image1_x1.png 1x, /img/image1_x2.png 2x"
-						type="image/jpeg"
-					/> */
-}

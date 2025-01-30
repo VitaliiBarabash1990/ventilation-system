@@ -8,7 +8,7 @@ const Footer = () => {
 				<div className={s.Footer__section_wraper}>
 					<ul className={s.Footer__section_footer_descr_list}>
 						<li className={s.Footer__section_descr_item}>
-							<Link href="/">
+							<Link href="/home">
 								<svg className={s.Footer__container_logo}>
 									<title>button_errow</title>
 									<image href="/Logo.svg" x="0" y="0" height="54" width="100" />

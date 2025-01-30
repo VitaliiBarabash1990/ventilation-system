@@ -3,7 +3,7 @@ import benefits from "./benefits.json";
 
 const Benefits = () => {
 	return (
-		<div className={`section ${s.Benefits__section}`}>
+		<div id="Benefits" className={`section ${s.Benefits__section}`}>
 			<div className="container">
 				<div className={s.Benefits__section_wraper}>
 					<h2 className={s.Benefits__section_title}>Наші Переваги</h2>

@@ -1,26 +1,26 @@
 [
 	{
-		"img": "/symbol-defs.svg#icon-eva_lock-fill",
+		"img": "/symbol-defs.svg#icon-fa_thumbs-o-up",
 		"title": "Зручність",
 		"text": "Комплексний підхід від концепції до запуску"
 	},
 	{
-		"img": "/symbol-defs.svg#icon-fa_handshake-o",
+		"img": "/symbol-defs.svg#icon-fa_hourglass-1",
 		"title": "Час",
 		"text": "Чіткі строки виконання проектування та монтажу"
 	},
 	{
-		"img": "/symbol-defs.svg#icon-fa_hourglass-1",
+		"img": "/symbol-defs.svg#icon-fa_handshake-o",
 		"title": "Гарантія",
 		"text": "На обладнання та якість виконаних робіт"
 	},
 	{
-		"img": "/symbol-defs.svg#icon-fa_thumbs-o-up",
+		"img": "/symbol-defs.svg#icon-fa_wrench",
 		"title": "Підтримка",
 		"text": "Сервісне супроводження після запуску"
 	},
 	{
-		"img": "/symbol-defs.svg#icon-fa_wrench",
+		"img": "/symbol-defs.svg#icon-eva_lock-fill",
 		"title": "Надійність",
 		"text": "Надаємо кошторис робіт та працюємо за договором"
 	},

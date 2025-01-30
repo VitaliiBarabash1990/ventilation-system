@@ -9,13 +9,13 @@ import Services from "@/components/Services/Services";
 export default function Home() {
 	return (
 		<>
-			<Hero />
+			{/* <Hero />
 			<Services />
-			<OurWorks />
+			<OurWorks /> */}
 			<Benefits />
-			<Partners />
+			{/* <Partners />
 			<Reviews />
-			<Contacts />
+			<Contacts /> */}
 		</>
 	);
 }

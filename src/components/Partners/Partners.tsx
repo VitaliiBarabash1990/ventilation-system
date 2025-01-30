@@ -13,7 +13,7 @@ const Partners = () => {
 		"/brands/panasonic.svg",
 	];
 	return (
-		<div className={`section ${s.Partners__section}`}>
+		<div id="Partners" className={`section ${s.Partners__section}`}>
 			<div className="container">
 				<h2 className={s.Partners__section_title}>Наші партнери</h2>
 				<ul className={s.Partners__section_list}>
