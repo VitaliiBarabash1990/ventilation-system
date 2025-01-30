@@ -10,3 +10,67 @@
 .OurWorks__reviews_slide {
 	margin-bottom: 48px;
 }
+
+.sliderContainer {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+/* Общие стили для кнопок */
+.navButton {
+	position: absolute;
+	top: 50%;
+	border: 3px solid var(--background-button);
+	padding: 12px;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.navButton:hover {
+	background: var(--background-fone);
+	opacity: 0.3;
+}
+
+/* Левая кнопка */
+.prevButton {
+	left: -70px;
+}
+
+/* Правая кнопка */
+.nextButton {
+	right: -70px;
+}
+
+.navButton_icon {
+	fill: var(--background-button);
+	min-width: 24px;
+	min-height: 24px;
+}
+.right {
+	rotate: 180deg;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+	.navButton {
+		width: 30px;
+		height: 30px;
+		font-size: 16px;
+	}
+
+	.prevButton {
+		left: -30px;
+	}
+
+	.nextButton {
+		right: -30px;
+	}
+}
