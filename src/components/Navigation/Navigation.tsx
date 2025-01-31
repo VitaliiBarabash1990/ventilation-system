@@ -1,7 +1,11 @@
+"use client";
 import Link from "next/link";
 import s from "./Navigation.module.css";
+import BurgerButton from "@/components/UI/BurgerButton/BurgerButton";
+import { useState } from "react";
 
 const Navigation = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
 	return (
 		<div className={`container ${s.Navigation__container}`}>
 			<nav className={s.Navigation__container_wrap}>
@@ -10,7 +14,12 @@ const Navigation = () => {
 						<Link href="/">
 							<svg className={s.Navigation__container_logo}>
 								<title>button_errow</title>
-								<image href="/Logo.svg" x="0" y="0" height="50" width="100" />
+								<image
+									href="/Logo.svg"
+									x="0"
+									y="0"
+									className={s.Navigation__logo}
+								/>
 							</svg>
 						</Link>
 					</li>
@@ -48,6 +57,29 @@ const Navigation = () => {
 						</li>
 					</ul>
 				</address>
+			</nav>
+
+			<nav className={s.Navigation__mob}>
+				<ul className={s.Navigation__mob_menu}>
+					<li>
+						<Link href="/">
+							<svg className={s.Navigation__mob_logo}>
+								<title>button_errow</title>
+								<image
+									href="/Logo.svg"
+									x="0"
+									y="0"
+									className={s.Navigation__logo}
+								/>
+							</svg>
+						</Link>
+					</li>
+					<li>
+						<div className={s.headerBurgerButton}>
+							<BurgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+						</div>
+					</li>
+				</ul>
 			</nav>
 		</div>
 	);

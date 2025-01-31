@@ -1,35 +1,53 @@
 .Hero__section_title {
 	font-family: var(--third-family);
 	font-weight: 600;
-	font-size: 48px;
+	font-size: 24px;
 	color: var(--white);
+	text-align: left;
+	margin-bottom: 20px;
 }
 .Hero__section_text {
 	font-family: var(--font-family);
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 16px;
 	color: var(--white);
+	text-align: left;
+	margin-bottom: 32px;
 }
+
 .Hero__section_info_descr_title {
 	font-family: var(--third-family);
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 16px;
 	color: var(--white);
 }
 .Hero__section_info_descr_text {
 	font-family: var(--third-family);
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 14px;
 	color: var(--white);
 }
+
+.Hero__section {
+	background-image: url("/Hero-Section.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: -48px;
+	padding-top: 95px;
+}
+
 .Hero__section_button {
 	font-family: var(--font4);
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 16px;
 	text-transform: capitalize;
 	color: var(--white);
 	border-radius: 8px;
-	/* width: 280px; */
+	width: 100%;
 	height: 60px;
 	background: #ff6a03;
 	overflow: hidden;
@@ -63,18 +81,109 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 20px;
+	position: relative;
+	max-width: 311px;
 }
 
 .Hero__section_button_icon {
 	width: 23px;
 	height: 23px;
+	position: absolute;
+	right: 19px;
+}
+.Hero__section_item_icon {
+	width: 32px;
+	height: 32px;
+	stroke: #ff6a03;
+	fill: none;
+}
+.Hero__section_item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	gap: 12px;
+}
+.Hero__section_info_descr {
+	text-align: left;
+}
+.Hero__section_list {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	gap: 20px;
+}
+
+.Hero__section_img {
+	display: none;
+}
+.Hero__section_wraper {
+	position: relative;
+}
+.Hero__section_img {
+	position: absolute;
+	bottom: 18%;
+	right: 0;
+	width: 55%;
+	max-width: 387px;
+}
+
+@media screen and (min-width: 375px) {
+	.Hero__section_img {
+		display: block;
+	}
+}
+@media screen and (min-width: 768px) {
+	.Hero__section_title {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+	.Hero__section_text {
+		font-size: 24px;
+	}
+	.Hero__section_info_descr_title {
+		font-size: 20px;
+	}
+	.Hero__section_info_descr_text {
+		font-size: 16px;
+	}
+	.Hero__section_img {
+		position: absolute;
+		bottom: 15px;
+		min-width: 518px;
+	}
+	.Hero__section_list {
+		gap: 32px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.Hero__section {
+		top: -100px;
+		padding-top: 116px;
+	}
+	.Hero__section_wraper {
+		max-width: 1184px;
+	}
+	.Hero__section_title {
+		font-size: 36px;
+	}
+	.Hero__section_text {
+		font-size: 28px;
+	}
+	.Hero__section_info_descr_title {
+		font-size: 22px;
+	}
+	.Hero__section_info_descr_text {
+		font-size: 18px;
+	}
 }
 
 @media screen and (min-width: 1440px) {
 	.Hero__section_title {
 		font-size: 48px;
+		margin-bottom: 24px;
 	}
 	.Hero__section_text {
 		font-size: 32px;
@@ -85,28 +194,16 @@
 	.Hero__section_info_descr_text {
 		font-size: 20px;
 	}
-	.Hero__section {
-		background-image: url("/Hero-Section.svg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		width: 100%;
-		height: auto;
-		position: relative;
-		top: -100px;
-	}
 	.Hero__section_wraper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 24px;
+		min-width: 100%;
 	}
 	.Hero__section_info {
 		text-align: left;
 		width: 60%;
-	}
-	.Hero__section_title {
-		margin-bottom: 24px;
 	}
 	.Hero__section_text {
 		margin-bottom: 32px;
@@ -116,6 +213,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		gap: 12px;
 		margin-bottom: 48px;
 	}
 	.Hero__section_item {
@@ -132,14 +230,23 @@
 	.Hero__section_item_icon {
 		width: 40px;
 		height: 40px;
-		stroke: #ff6a03;
-		fill: none;
 	}
 	.Hero__section_button {
 		padding-left: 20px;
 		padding-right: 12px;
-		min-width: 280px;
+		max-width: 310px;
 		height: 60px;
+		font-size: 20px;
+	}
+	.Hero__section_button_icon {
+		position: relative;
+		right: 0;
+	}
+	.Hero__section_img {
+		/* top: 95px; */
+		min-width: 518px;
+		/* right: 0;
+		width: 55%; */
 	}
 }
 
