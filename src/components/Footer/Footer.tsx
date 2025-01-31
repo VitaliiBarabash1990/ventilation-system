@@ -85,6 +85,37 @@ const Footer = () => {
 							<Link href="tel:+380733442299">+380 (73) 344-22-99</Link>
 						</li>
 					</ul>
+					<div className={s.Footer__mob_section}>
+						<p className={s.Footer__mob_section_footer_text}>
+							Соціальні мережі:
+						</p>
+						<ul className={s.Footer__mob_section_soc_icon_list}>
+							<li className={s.Footer__mob_section_soc_icon_item}>
+								<Link href="http://instagram.com" target="_blank">
+									<svg className={s.Footer__mob_section_soc_icon}>
+										<title>button_errow</title>
+										<image href="/soc_icon/instagram.svg" x="0" y="0" />
+									</svg>
+								</Link>
+							</li>
+							<li className={s.Footer__mob_section_soc_icon_item}>
+								<Link href="http://telegram.com" target="_blank">
+									<svg className={s.Footer__mob_section_soc_icon}>
+										<title>button_errow</title>
+										<image href="/soc_icon/telegram.svg" x="0" y="0" />
+									</svg>
+								</Link>
+							</li>
+							<li className={s.Footer__mob_section_soc_icon_item}>
+								<Link href="http://facebook.com" target="_blank">
+									<svg className={s.Footer__mob_section_soc_icon}>
+										<title>button_errow</title>
+										<image href="/soc_icon/facebook.svg" x="0" y="0" />
+									</svg>
+								</Link>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,19 +1,37 @@
 .Footer__section {
 	background-color: var(--background-footer);
-	padding-top: 54px;
+	padding-top: 27px;
 	padding-bottom: 54px;
+}
+.Footer__section_wraper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .Footer__section_title {
 	font-family: var(--font-family);
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 16px;
 	color: var(--white);
 }
 .Footer__section_footer_text {
 	font-family: var(--font-family);
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 16px;
 	color: var(--white);
+}
+.Footer__section_descr_item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.Footer__section_descr_item:last-child {
+	display: none;
+}
+.Footer__container_logo {
+	width: 100px;
+	height: 54px;
 }
 .Footer__container_soc_icon {
 	width: 32px;
@@ -26,16 +44,64 @@
 	font-size: 16px;
 	color: var(--white);
 }
+.Footer__mob_section {
+	width: 100%;
+}
+.Footer__mob_section_footer_text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 27px;
+}
+.Footer__mob_section_soc_icon_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 24px;
+}
+.Footer__mob_section_soc_icon_item {
+	width: 32px;
+	height: 32px;
+}
+
+.Footer__section_footer_descr_list {
+	margin-bottom: 47px;
+}
+.Footer__container_logo,
+.Footer__section_footer_list {
+	margin-bottom: 28px;
+}
+.Footer__section_footer_list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.Footer__section_footer_address_list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-bottom: 41px;
+}
+.Footer__section_footer_address_item {
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+	.Footer__section {
+		padding-top: 54px;
+	}
+}
+@media screen and (min-width: 1280px) {
+}
+
 @media screen and (min-width: 1440px) {
 	.Footer__section_wraper {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		gap: 105px;
-	}
-	.Footer__container_logo {
-		width: 100px;
-		height: 54px;
 	}
 
 	.Footer__section_footer_text,
@@ -72,5 +138,8 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 32px;
+	}
+	.Footer__mob_section {
+		display: none;
 	}
 }

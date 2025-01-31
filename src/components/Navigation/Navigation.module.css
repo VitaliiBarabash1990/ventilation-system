@@ -87,14 +87,14 @@
 	.Navigation__container_address_item {
 		font-size: 18px;
 	}
+	.Navigation__logo {
+		width: 100px;
+		height: 50px;
+	}
 }
 @media screen and (min-width: 1440px) {
 	.Navigation__container_nav_item,
 	.Navigation__container_address_item {
 		font-size: 18px;
-	}
-	.Navigation__logo {
-		width: 100px;
-		height: 50px;
 	}
 }
