@@ -99,4 +99,8 @@
 		justify-content: center;
 		gap: 72px;
 	}
+	.Contacts__section_frame {
+		width: 800px;
+		height: 600px;
+	}
 }

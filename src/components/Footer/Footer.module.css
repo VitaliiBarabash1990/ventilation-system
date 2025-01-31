@@ -17,7 +17,7 @@
 }
 .Footer__container_soc_icon {
 	width: 32px;
-	height: 32px;
+	height: 33px;
 }
 .Footer__section_footer_item,
 .Footer__section_footer_address_item {
@@ -49,17 +49,13 @@
 	.Footer__section_descr_item {
 		max-width: 508px;
 	}
-	.Footer__section_footer_list {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 32px;
-	}
+	.Footer__section_footer_list,
 	.Footer__section_footer_address_list {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 24px;
+		margin-top: 16px;
 	}
 	.Footer__section_footer_address_item:last-child {
 		display: flex;

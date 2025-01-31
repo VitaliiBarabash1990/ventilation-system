@@ -1,3 +1,7 @@
+.Services__section {
+	padding-top: 0;
+	padding-bottom: 0;
+}
 .Services__section_title {
 	font-family: var(--third-family);
 	font-weight: 400;
@@ -7,9 +11,6 @@
 	margin-bottom: 48px;
 }
 .Services__section_wraper {
-	width: 100%;
-}
-.Services__section {
-	padding-top: 0;
-	padding-bottom: 0;
+	max-width: 1344px;
+	margin: 0 auto;
 }
