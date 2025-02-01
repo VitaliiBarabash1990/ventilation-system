@@ -8,100 +8,164 @@ const Contacts = () => {
 				<div className={s.Contacts__section_wraper}>
 					<h2 className={s.Contacts__section_title}>Контакти</h2>
 					<div className={s.Contacts__section_container}>
-						<ul className={s.Contacts__section_list}>
-							<li className={s.Contacts__section_item}>
-								<svg className={s.Contacts__section_icon}>
-									<use href="/symbol-defs.svg#icon-location"></use>
-								</svg>
-								<p className={s.Contacts__section_text}>
-									Просп. Миколи Бажана, 24/1
-								</p>
-							</li>
-							<li className={s.Contacts__section_item}>
-								<svg className={s.Contacts__section_icon}>
-									<use href="/symbol-defs.svg#icon-Group_email"></use>
-								</svg>
-								<p className={s.Contacts__section_text_email}>
-									VentilationKyiv@ukr.net
-								</p>
-							</li>
-							<li className={s.Contacts__section_item}>
-								<svg className={s.Contacts__section_icon}>
-									<use href="/symbol-defs.svg#icon-proicons_clock"></use>
-								</svg>
-								<p className={s.Contacts__section_text}>
-									Пн - Пт 09:00 до 18:00
-								</p>
-							</li>
-							<li className={s.Contacts__section_item}>
-								<svg className={s.Contacts__section_icon}>
-									<use href="/symbol-defs.svg#icon-line-md_phone"></use>
-								</svg>
-								<p className={s.Contacts__section_text}>
-									+380 (93) 548-22-00
-									<br />
-									+380 (73) 344-22-99
-								</p>
-							</li>
-
-							<li
-								className={`${s.Contacts__section_soc_icon_item} ${s.Contacts__section_soc_color_fiolet}`}
-							>
-								<Link
-									href="http://facebook.com"
-									target="_blank"
-									className={s.Contacts__section_link_soc}
-								>
-									<svg className={s.Contacts__container_soc_icon}>
-										<title>button_errow</title>
-										<image href="/soc_icon/fa-brands_viber.svg" x="0" y="0" />
+						{}
+						<div className={s.Contacts__section_container_list}>
+							{}
+							<ul className={s.Contacts__section_list}>
+								<li className={s.Contacts__section_item}>
+									<svg className={s.Contacts__section_icon}>
+										<use href="/symbol-defs.svg#icon-location"></use>
 									</svg>
-									<p className={s.Contacts__section_soc_text}>
-										Написати в Viber
+									<p className={s.Contacts__section_text}>
+										Просп. Миколи Бажана, 24/1
 									</p>
-								</Link>
-							</li>
-
-							<li
-								className={`${s.Contacts__section_soc_icon_item} ${s.Contacts__section_soc_color_blue}`}
-							>
-								<Link
-									href="http://facebook.com"
-									target="_blank"
-									className={s.Contacts__section_link_soc}
-								>
-									<svg className={s.Contacts__container_soc_icon}>
-										<title>button_errow</title>
-										<image
-											href="/soc_icon/fa-brands_telegram.svg"
-											x="0"
-											y="0"
-										/>
+								</li>
+								<li className={s.Contacts__section_item}>
+									<svg className={s.Contacts__section_icon}>
+										<use href="/symbol-defs.svg#icon-Group_email"></use>
 									</svg>
-									<p className={s.Contacts__section_soc_text}>
-										Написати в Telegram
+									<p className={s.Contacts__section_text_email}>
+										VentilationKyiv@ukr.net
 									</p>
-								</Link>
-							</li>
-
-							<li
-								className={`${s.Contacts__section_soc_icon_item} ${s.Contacts__section_soc_color_green}`}
-							>
-								<Link
-									href="http://facebook.com"
-									target="_blank"
-									className={s.Contacts__section_link_soc}
-								>
-									<svg className={s.Contacts__container_soc_icon}>
-										<title>button_errow</title>
-										<image href="/soc_icon/la_whatsapp.svg" x="0" y="0" />
+								</li>
+								<li className={s.Contacts__section_item}>
+									<svg className={s.Contacts__section_icon}>
+										<use href="/symbol-defs.svg#icon-proicons_clock"></use>
 									</svg>
-									<p className={s.Contacts__section_soc_text}>
-										Написати в WhatsApp
+									<p className={s.Contacts__section_text}>
+										Пн - Пт 09:00 до 18:00
 									</p>
-								</Link>
-							</li>
-						</ul>
+								</li>
+								<li className={s.Contacts__section_item}>
+									<svg className={s.Contacts__section_icon}>
+										<use href="/symbol-defs.svg#icon-line-md_phone"></use>
+									</svg>
+									<p className={s.Contacts__section_text}>
+										+380 (93) 548-22-00
+										<br />
+										+380 (73) 344-22-99
+									</p>
+								</li>
+
+								<li
+									className={`${s.Contacts__section_soc_icon_item} ${s.Contacts__section_soc_color_fiolet}`}
+								>
+									<Link
+										href="http://facebook.com"
+										target="_blank"
+										className={s.Contacts__section_link_soc}
+									>
+										<svg className={s.Contacts__container_soc_icon}>
+											<title>button_errow</title>
+											<image href="/soc_icon/fa-brands_viber.svg" x="0" y="0" />
+										</svg>
+										<p className={s.Contacts__section_soc_text}>
+											Написати в Viber
+										</p>
+									</Link>
+								</li>
+
+								<li
+									className={`${s.Contacts__section_soc_icon_item} ${s.Contacts__section_soc_color_blue}`}
+								>
+									<Link
+										href="http://facebook.com"
+										target="_blank"
+										className={s.Contacts__section_link_soc}
+									>
+										<svg className={s.Contacts__container_soc_icon}>
+											<title>button_errow</title>
+											<image
+												href="/soc_icon/fa-brands_telegram.svg"
+												x="0"
+												y="0"
+											/>
+										</svg>
+										<p className={s.Contacts__section_soc_text}>
+											Написати в Telegram
+										</p>
+									</Link>
+								</li>
+
+								<li
+									className={`${s.Contacts__section_soc_icon_item} ${s.Contacts__section_soc_color_green}`}
+								>
+									<Link
+										href="http://facebook.com"
+										target="_blank"
+										className={s.Contacts__section_link_soc}
+									>
+										<svg className={s.Contacts__container_soc_icon}>
+											<title>button_errow</title>
+											<image href="/soc_icon/la_whatsapp.svg" x="0" y="0" />
+										</svg>
+										<p className={s.Contacts__section_soc_text}>
+											Написати в WhatsApp
+										</p>
+									</Link>
+								</li>
+							</ul>
+							{}
+							<ul className={s.Contacts__section_button_list}>
+								<li
+									className={`${s.Contacts__section_button_item} ${s.Contacts__section_button_color_fiolet}`}
+								>
+									<Link
+										href="http://facebook.com"
+										target="_blank"
+										className={s.Contacts__section_link_soc}
+									>
+										<svg className={s.Contacts__container_soc_icon}>
+											<title>button_errow</title>
+											<image href="/soc_icon/fa-brands_viber.svg" x="0" y="0" />
+										</svg>
+										<p className={s.Contacts__section_button_text}>
+											Написати в Viber
+										</p>
+									</Link>
+								</li>
+								<li
+									className={`${s.Contacts__section_button_item} ${s.Contacts__section_button_color_blue}`}
+								>
+									<Link
+										href="http://facebook.com"
+										target="_blank"
+										className={s.Contacts__section_link_soc}
+									>
+										<svg className={s.Contacts__container_soc_icon}>
+											<title>button_errow</title>
+											<image
+												href="/soc_icon/fa-brands_telegram.svg"
+												x="0"
+												y="0"
+											/>
+										</svg>
+										<p className={s.Contacts__section_button_text}>
+											Написати в Telegram
+										</p>
+									</Link>
+								</li>
+								<li
+									className={`${s.Contacts__section_button_item} ${s.Contacts__section_button_color_green}`}
+								>
+									<Link
+										href="http://facebook.com"
+										target="_blank"
+										className={s.Contacts__section_link_soc}
+									>
+										<svg className={s.Contacts__container_soc_icon}>
+											<title>button_errow</title>
+											<image href="/soc_icon/la_whatsapp.svg" x="0" y="0" />
+										</svg>
+										<p className={s.Contacts__section_button_text}>
+											Написати в WhatsApp
+										</p>
+									</Link>
+								</li>
+							</ul>
+							{}
+						</div>
+						{}
 
 						<div className={s.Contacts__section_map}>
 							<iframe
