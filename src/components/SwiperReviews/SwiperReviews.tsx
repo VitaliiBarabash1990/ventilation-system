@@ -17,7 +17,7 @@ const SwiperReviews = () => {
 		<div className={s.sliderContainer}>
 			<Swiper
 				className={s.Swiper__swiper}
-				spaceBetween={0}
+				// spaceBetween={0}
 				slidesPerGroup={1}
 				pagination={{ clickable: true }}
 				modules={[Pagination, Navigation]}
@@ -27,9 +27,9 @@ const SwiperReviews = () => {
 				}}
 				loop={true}
 				breakpoints={{
-					320: { slidesPerView: 1 },
-					768: { slidesPerView: 2 },
-					1280: { slidesPerView: 3 },
+					320: { slidesPerView: 1, spaceBetween: 10 },
+					768: { slidesPerView: 2, spaceBetween: 15 },
+					1280: { slidesPerView: 3, spaceBetween: 20 },
 				}}
 			>
 				{Data.map((review, index) => (

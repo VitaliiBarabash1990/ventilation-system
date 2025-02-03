@@ -20,31 +20,6 @@ const SwiperRevievsItem = ({ data }: { data: ReviewData }) => {
 								</svg>
 							</li>
 						))}
-						{/* <li className={s.Swiper__reviews_item_star}>
-							<svg className={s.Swiper__reviews_list_star_icon}>
-								<use href="/symbol-defs.svg#icon-star"></use>
-							</svg>
-						</li>
-						<li className={s.Swiper__reviews_item_star}>
-							<svg className={s.Swiper__reviews_list_star_icon}>
-								<use href="/symbol-defs.svg#icon-star"></use>
-							</svg>
-						</li>
-						<li className={s.Swiper__reviews_item_star}>
-							<svg className={s.Swiper__reviews_list_star_icon}>
-								<use href="/symbol-defs.svg#icon-star"></use>
-							</svg>
-						</li>
-						<li className={s.Swiper__reviews_item_star}>
-							<svg className={s.Swiper__reviews_list_star_icon}>
-								<use href="/symbol-defs.svg#icon-star"></use>
-							</svg>
-						</li>
-						<li className={s.Swiper__reviews_item_star}>
-							<svg className={s.Swiper__reviews_list_star_icon}>
-								<use href="/symbol-defs.svg#icon-star"></use>
-							</svg>
-						</li> */}
 					</ul>
 					<svg className={s.Swiper__reviews_item_head_G}>
 						<use href="/symbol-defs.svg#icon-google_logo"></use>
