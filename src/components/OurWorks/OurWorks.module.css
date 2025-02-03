@@ -1,76 +1,161 @@
+.sliderContainer {
+	position: relative;
+	width: 296px;
+	max-width: 320px;
+	margin: auto;
+}
 .OurWorks__section_title {
 	font-family: var(--third-family);
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 24px;
 	text-align: center;
 	color: #232323;
-	margin-bottom: 48px;
+}
+.swiper {
+	padding: 20px 6px;
+	padding-bottom: 40px;
 }
 
-.OurWorks__reviews_slide {
-	margin-bottom: 48px;
-}
-
-.sliderContainer {
-	position: relative;
-	width: 100%;
-	max-width: 1200px;
-	margin: auto;
-}
-
-/* Общие стили для кнопок */
-.navButton {
-	position: absolute;
-	top: 50%;
-	border: 3px solid var(--background-button);
-	padding: 12px;
-	width: 48px;
-	height: 48px;
-	border-radius: 50%;
+.slide {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	cursor: pointer;
-	transition: 0.3s;
 }
 
-.navButton:hover {
-	background: var(--background-fone);
-	opacity: 0.3;
+.reviewCard {
+	background: white;
+	box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.9);
+	border-radius: 12px;
+	padding: 20px;
+	text-align: center;
+	padding: 0;
+	min-width: 100%;
 }
 
-/* Левая кнопка */
-.prevButton {
-	left: -70px;
-}
-
-/* Правая кнопка */
-.nextButton {
-	right: -70px;
+.navButton {
+	display: none;
 }
 
 .navButton_icon {
 	fill: var(--background-button);
 	min-width: 24px;
-	min-height: 24px;
+	height: 24px;
 }
 .right {
 	rotate: 180deg;
 }
 
-/* Адаптив */
-@media (max-width: 768px) {
+@media screen and (min-width: 375px) {
+	.sliderContainer {
+		max-width: 600px;
+	}
+
+	/* Навигационные кнопки */
 	.navButton {
-		width: 30px;
-		height: 30px;
-		font-size: 16px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: white;
+		border: 2px solid var(--background-button);
+		padding: 10px;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		z-index: 999;
+	}
+
+	.navButton:hover .navButton_icon {
+		background: var(--background-button);
+		fill: var(--white);
+		border-radius: 50%;
 	}
 
 	.prevButton {
-		left: -30px;
+		left: -24px;
 	}
 
 	.nextButton {
-		right: -30px;
+		right: -24px;
+	}
+}
+
+/* Стили для пагинации (точек) */
+.swiper-pagination-bullet {
+	background: gray;
+	opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+	background: orange;
+	opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+	.sliderContainer {
+		max-width: 800px;
+		padding: 0 32px;
+	}
+	.swiper {
+		padding: 32px 10px;
+		padding-bottom: 48px;
+	}
+	.reviewCard {
+		padding: 0;
+		min-width: 100%;
+	}
+	.navButton,
+	.navButton_icon {
+		min-width: 36px;
+		height: 36px;
+	}
+	.prevButton {
+		left: 0px;
+	}
+	.nextButton {
+		right: 0px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.sliderContainer {
+		max-width: 1080px;
+	}
+	.OurWorks__section_title {
+		font-size: 24px;
+	}
+	.reviewCard {
+		padding: 0px;
+		min-width: 100%;
+	}
+	.navButton {
+		width: 48px;
+		height: 48px;
+	}
+	.prevButton {
+		left: -48px;
+	}
+	.nextButton {
+		right: -48px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.sliderContainer {
+		max-width: 1248px;
+		/* overflow: hidden; */
+	}
+	.swiper {
+		padding-top: 32px;
+	}
+	.OurWorks__section_title {
+		margin-bottom: 0;
+	}
+	.reviewCard {
+		padding: 0px;
+		text-align: center;
+		max-width: calc(100% - 40px);
 	}
 }
