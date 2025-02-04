@@ -1,7 +1,10 @@
+.OurWorks__section {
+	width: 100%;
+}
+
 .sliderContainer {
 	position: relative;
-	width: 296px;
-	max-width: 320px;
+	width: calc(100% - 32px - 48px);
 	margin: auto;
 }
 .OurWorks__section_title {
@@ -29,6 +32,10 @@
 	text-align: center;
 	padding: 0;
 	min-width: 100%;
+	height: auto;
+}
+.photo {
+	width: 100%;
 }
 
 .navButton {
@@ -74,11 +81,11 @@
 	}
 
 	.prevButton {
-		left: -24px;
+		left: -32px;
 	}
 
 	.nextButton {
-		right: -24px;
+		right: -32px;
 	}
 }
 
@@ -95,12 +102,16 @@
 
 @media screen and (min-width: 768px) {
 	.sliderContainer {
-		max-width: 800px;
-		padding: 0 32px;
+		max-width: 100%;
+		padding: 0 12px;
+		margin: 0 auto;
 	}
 	.swiper {
 		padding: 32px 10px;
 		padding-bottom: 48px;
+	}
+	.OurWorks__section_title {
+		font-size: 32px;
 	}
 	.reviewCard {
 		padding: 0;
@@ -112,19 +123,19 @@
 		height: 36px;
 	}
 	.prevButton {
-		left: 0px;
+		left: -36px;
 	}
 	.nextButton {
-		right: 0px;
+		right: -36px;
 	}
 }
 
 @media screen and (min-width: 1280px) {
-	.sliderContainer {
-		max-width: 1080px;
+	.swiper {
+		padding-top: 48px;
 	}
 	.OurWorks__section_title {
-		font-size: 24px;
+		font-size: 36px;
 	}
 	.reviewCard {
 		padding: 0px;
@@ -152,6 +163,7 @@
 	}
 	.OurWorks__section_title {
 		margin-bottom: 0;
+		font-size: 40px;
 	}
 	.reviewCard {
 		padding: 0px;

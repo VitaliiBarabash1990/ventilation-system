@@ -36,12 +36,10 @@ const CustomSwiper = () => {
 						{imgs.map((img, index) => (
 							<SwiperSlide key={index} className={s.slide}>
 								<div className={s.reviewCard}>
-									<div className={s.reviewCard}>
-										<picture>
-											<source srcSet={img.img1x} type="image/jpeg" />
-											<img src={img.img2x} alt="workers" />
-										</picture>
-									</div>
+									<picture>
+										<source srcSet={img.img1x} type="image/jpeg" />
+										<img src={img.img2x} alt="workers" className={s.photo} />
+									</picture>
 								</div>
 							</SwiperSlide>
 						))}
