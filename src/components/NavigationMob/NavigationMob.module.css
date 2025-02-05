@@ -1,0 +1,33 @@
+.navMenu {
+	display: flex;
+	gap: 32px;
+}
+
+.navMenu__item_link {
+	display: flex;
+	align-items: center;
+}
+
+.navMenu__link {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 175%;
+	color: var(--white);
+}
+
+.navMenu__link:hover,
+.navMenu__link:focus {
+	color: var(--background-button);
+	border: 1px solid var(--background-button);
+	padding: 0 50px;
+	border-radius: 20px;
+}
+
+.navMenu_modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

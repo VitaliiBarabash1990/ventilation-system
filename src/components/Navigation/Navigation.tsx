@@ -3,9 +3,12 @@ import Link from "next/link";
 import s from "./Navigation.module.css";
 import BurgerButton from "@/components/UI/BurgerButton/BurgerButton";
 import { useState } from "react";
+import { NavigationMob } from "../NavigationMob/NavigationMob";
 
 const Navigation = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
+	const isModal = true;
+	console.log("Open", menuOpen);
 	return (
 		<div className={`container ${s.Navigation__container}`}>
 			<nav className={s.Navigation__container_wrap}>
@@ -81,6 +84,9 @@ const Navigation = () => {
 					</li>
 				</ul>
 			</nav>
+			<div className={`${s.menu_burger} ${menuOpen ? s.open : ""}`}>
+				<NavigationMob isModal={isModal} setMenuOpen={setMenuOpen} />
+			</div>
 		</div>
 	);
 };
