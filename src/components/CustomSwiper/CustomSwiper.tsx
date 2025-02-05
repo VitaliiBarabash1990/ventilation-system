@@ -33,28 +33,30 @@ const CustomSwiper = () => {
 				{reviews.map((review) => (
 					<SwiperSlide key={review.id} className={s.slide}>
 						<div className={s.reviewCard}>
-							<ul className={s.rating}>
-								<li className={s.stars}>
-									{[...Array(review.rating)].map((_, i) => (
-										<span key={i}>
-											<svg className={s.reviews_list_star_icon}>
-												<use href="/symbol-defs.svg#icon-star"></use>
+							<div>
+								<ul className={s.rating}>
+									<li className={s.stars}>
+										{[...Array(review.rating)].map((_, i) => (
+											<span key={i}>
+												<svg className={s.reviews_list_star_icon}>
+													<use href="/symbol-defs.svg#icon-star"></use>
+												</svg>
+											</span>
+										))}
+									</li>
+									<li>
+										{review.google && (
+											<svg className={s.reviews_item_head_G}>
+												<use href="/symbol-defs.svg#icon-google_logo"></use>
 											</svg>
-										</span>
-									))}
-								</li>
-								<li>
-									{review.google && (
-										<svg className={s.reviews_item_head_G}>
-											<use href="/symbol-defs.svg#icon-google_logo"></use>
-										</svg>
-									)}
-								</li>
-							</ul>
-							<svg className={s.reviews_bloquote}>
-								<use href="/symbol-defs.svg#icon-quote"></use>
-							</svg>
-							<p className={s.text}>{review.text}</p>
+										)}
+									</li>
+								</ul>
+								<svg className={s.reviews_bloquote}>
+									<use href="/symbol-defs.svg#icon-quote"></use>
+								</svg>
+								<p className={s.text}>{review.text}</p>
+							</div>
 							<div className={s.client}>
 								<div className={s.reviews_client_overflov}>
 									<img src={review.image} alt={review.name} />

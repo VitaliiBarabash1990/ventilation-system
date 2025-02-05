@@ -13,6 +13,7 @@
 .slide {
 	display: flex;
 	justify-content: center;
+	height: auto;
 }
 
 .reviewCard {
@@ -22,6 +23,10 @@
 	padding: 20px;
 	text-align: center;
 	max-width: calc(100% - 40px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
 }
 
 .rating {
@@ -168,6 +173,7 @@
 
 @media screen and (min-width: 768px) {
 	.sliderContainer {
+		width: calc(100% - 64px);
 		max-width: 800px;
 	}
 	.reviewCard {
@@ -195,14 +201,17 @@
 @media screen and (min-width: 1280px) {
 	.sliderContainer {
 		max-width: 1080px;
-		/* border: 1px solid blue; */
 	}
-
+	.stars {
+		gap: 0;
+	}
 	.slide {
 		max-width: calc((100% - 32px) / 3);
+		height: auto;
 	}
 	.reviewCard {
 		min-width: 100%;
+
 		/* border: 1px solid blue; */
 	}
 	.swiper {
