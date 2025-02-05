@@ -3,7 +3,7 @@
 	margin: auto;
 	padding-top: 0;
 	text-align: left;
-	background: var(--background-fone-1);
+	/* background: var(--background-fone-1); */
 	border-radius: 8px;
 }
 
@@ -11,15 +11,21 @@
 
 .Services__section_list {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	gap: 21px;
+	gap: 32px;
 }
-
+.button_wraper {
+	width: 100%;
+}
 .Services__section_acord_button {
+	display: none;
+}
+.Services__section_acord_button_mob {
 	border-radius: 8px;
-	width: 322px;
+	width: 100%;
+
 	height: 90px;
 	background: var(--background-button-acord);
 	display: flex;
@@ -27,39 +33,36 @@
 	justify-content: center;
 	font-family: var(--second-family);
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 	color: var(--black);
+	padding-left: 33px;
+	padding-right: 33px;
+	position: relative;
 }
 
-.Services__section_acord_button:hover {
+.Services__section_acord_button_mob:hover {
 	background: #3b82f6;
 }
 
 .active {
-	background: none;
+	background: var(--background-fone-1);
 }
 
 /* Контент */
 
 .Services__section_acord_list {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding: 59px 79px;
-	text-align: left;
-	gap: 40px;
+	display: none;
 }
 
 .Services__section_acord_title {
 	font-family: var(--second-family);
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 20px;
 	text-align: center;
 	color: var(--text-title-color-1);
 	text-align: left;
-	margin-bottom: 59px;
+	margin-bottom: 16px;
 }
 
 .Services__section_services_list {
@@ -73,26 +76,148 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 44px;
+	gap: 24px;
 }
 
 .Services__section_icon {
 	display: flex;
 	flex-shrink: 0;
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 	fill: var(--background-button);
 }
 
 .Services__section_text {
 	font-family: var(--second-family);
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 16px;
 	color: var(--text-title-color-1);
 }
-.Services__section_acord_descr {
-	width: 70%;
+.acord_wraper {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 48px;
 }
+.Services__section_acord_list_mob {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--background-fone-1);
+	margin-top: 32px;
+	padding: 42px 27px;
+}
+.button_icon {
+	display: none;
+}
+
 .Services__section_acord_image {
-	width: 30%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+	.button_icon {
+		display: block;
+		width: 23px;
+		height: 23px;
+		position: absolute;
+		right: 25px;
+	}
+	.Services__section_acord_button_mob:focus .button_icon {
+		rotate: 180deg;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.Services__section_acord {
+		width: 100%;
+		margin: auto;
+		padding-top: 0;
+		text-align: left;
+		background: var(--background-fone-1);
+		border-radius: 8px;
+	}
+	.Services__section_acord_list_mob {
+		display: none;
+	}
+
+	.Services__section_acord_title {
+		font-family: var(--second-family);
+		font-weight: 600;
+		font-size: 36px;
+		text-align: center;
+		color: var(--text-title-color-1);
+		text-align: left;
+		margin-bottom: 59px;
+	}
+	.Services__section_text {
+		font-family: var(--second-family);
+		font-weight: 400;
+		font-size: 24px;
+		color: var(--text-title-color-1);
+	}
+	.Services__section_services_item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 44px;
+	}
+	.Services__section_list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 21px;
+	}
+	.Services__section_acord_list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 59px 79px;
+		text-align: left;
+		gap: 40px;
+	}
+	.button_wraper {
+		width: calc((100% - 63px) / 4);
+	}
+	.Services__section_acord_button_mob {
+		display: none;
+	}
+	.Services__section_acord_button {
+		border-radius: 8px;
+		width: 100%;
+		padding: 18px;
+		height: 90px;
+		background: var(--background-button-acord);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: var(--second-family);
+		font-weight: 600;
+		font-size: 20px;
+		text-align: center;
+		color: var(--black);
+	}
+
+	.active {
+		background: none;
+	}
+
+	.Services__section_acord_button:hover {
+		background: #3b82f6;
+	}
+	.Services__section_acord_descr {
+		width: 70%;
+	}
+	.Services__section_acord_image {
+		width: 30%;
+	}
+	.Services__section_icon {
+		display: flex;
+		flex-shrink: 0;
+		width: 20px;
+		height: 20px;
+		fill: var(--background-button);
+	}
+}
+@media screen and (min-width: 1440px) {
 }

@@ -256,6 +256,10 @@
 	.sliderContainer {
 		max-width: 1248px;
 	}
+	.swiper {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
 	.text {
 		font-size: 18px;
 		line-height: 167%;
