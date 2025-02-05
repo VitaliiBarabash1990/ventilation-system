@@ -85,6 +85,7 @@
 	gap: 20px;
 	position: relative;
 	max-width: 358px;
+	z-index: 9;
 }
 
 .Hero__section_button_icon {

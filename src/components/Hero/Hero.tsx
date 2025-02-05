@@ -1,6 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import s from "./Hero.module.css";
+import Modal from "../Modal/Modal";
+import RegistrationForm from "../UI/RegistrationForm/RegistrationForm";
 
 const Hero = () => {
+	const [isOpenModal, setIsOpenModal] = useState(false);
+	console.log("isOpenModal", isOpenModal);
+	const toggleModal = () => {
+		setIsOpenModal((prev) => !prev);
+	};
+
 	return (
 		<div className={`section ${s.Hero__section}`}>
 			<div className="container">
@@ -48,7 +59,11 @@ const Hero = () => {
 								</div>
 							</li>
 						</ul>
-						<button type="button" className={s.Hero__section_button}>
+						<button
+							type="button"
+							onClick={toggleModal}
+							className={s.Hero__section_button}
+						>
 							ЗАЛИШИТИ ЗАЯВКУ
 							<svg className={s.Hero__section_button_icon}>
 								<title>button_errow</title>
@@ -61,6 +76,11 @@ const Hero = () => {
 								/>
 							</svg>
 						</button>
+						{isOpenModal && (
+							<Modal close={toggleModal}>
+								<RegistrationForm />
+							</Modal>
+						)}
 					</div>
 					<div className={s.Hero__section_img}>
 						<picture>

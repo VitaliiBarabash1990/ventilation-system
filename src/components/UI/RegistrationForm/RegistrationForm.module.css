@@ -1,0 +1,117 @@
+.container__form {
+	min-width: calc(100% - 40px);
+}
+.formik__title {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 120%;
+	font-variant: small-caps;
+	color: var(--background-footer);
+	text-align: left;
+}
+.label {
+	width: 100%;
+}
+.formik__name_label {
+	text-align: left;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--black);
+	margin-bottom: 6px;
+}
+.formik__input,
+.formik__text_area {
+	background: rgba(200, 55, 171, 0);
+	width: 100%;
+}
+.formik__input {
+	height: 45px;
+	padding-left: 12px;
+	background: #f6f6f6;
+	border-radius: 8px;
+	height: 52px;
+}
+.formik__text_area {
+	height: 155px;
+	padding-left: 12px;
+}
+.formik__input::placeholder,
+.formik__text_area::placeholder {
+	font-size: 12px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 24px;
+	margin-top: 42px;
+}
+.formik__btn {
+	background: var(--background-button);
+	border-radius: 7px;
+	padding: 18px 15px;
+	width: 237px;
+	height: 60px;
+
+	font-family: var(--font4);
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	position: relative;
+	text-align: left;
+	align-self: flex-start;
+}
+.formik__btn:hover {
+	background: var(--background-footer);
+}
+.error {
+	color: red;
+}
+
+.button_icon {
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	right: 15px;
+	top: 18px;
+}
+
+@media screen and (min-width: 768px) {
+	.container__form {
+		width: 100%;
+		margin: 0;
+	}
+	.container__title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+	.formik__img_container {
+		position: absolute;
+		top: -80px;
+		right: -50px;
+	}
+	.form {
+		align-items: flex-start;
+		gap: 32px;
+	}
+	.formik__title {
+		font-size: 24px;
+
+		color: var(--black);
+	}
+	.formik__name_label {
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	.formik__input::placeholder,
+	.formik__text_area::placeholder {
+		font-size: 14px;
+	}
+}

@@ -8,7 +8,6 @@ import { NavigationMob } from "../NavigationMob/NavigationMob";
 const Navigation = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const isModal = true;
-	console.log("Open", menuOpen);
 	return (
 		<div className={`container ${s.Navigation__container}`}>
 			<nav className={s.Navigation__container_wrap}>
