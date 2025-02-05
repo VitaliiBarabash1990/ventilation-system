@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import s from "./CustomSwiper.module.css";
 import reviews from "./reviews.json";
+import Image from "next/image";
 
 const CustomSwiper = () => {
 	return (
@@ -59,7 +60,13 @@ const CustomSwiper = () => {
 							</div>
 							<div className={s.client}>
 								<div className={s.reviews_client_overflov}>
-									<img src={review.image} alt={review.name} />
+									<Image
+										src={review.image}
+										alt={review.name}
+										width={100}
+										height={100}
+										className={s.avatar}
+									/>
 								</div>
 								<span className={s.name}>{review.name}</span>
 							</div>

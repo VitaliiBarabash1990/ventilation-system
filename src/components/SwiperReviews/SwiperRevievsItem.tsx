@@ -1,3 +1,4 @@
+import Image from "next/image";
 import s from "./SwiperReviews.module.css";
 
 interface ReviewData {
@@ -33,7 +34,14 @@ const SwiperRevievsItem = ({ data }: { data: ReviewData }) => {
 			</div>
 			<div className={s.Swiper__reviews_client}>
 				<div className={s.Swiper__reviews_client_overflov}>
-					<img src={img} alt="men1" />
+					{/* <img src={img} alt="men1" /> */}
+					<Image
+						src={img}
+						alt="men1"
+						width={100}
+						height={100}
+						className={s.avatar}
+					/>
 				</div>
 				<h3 className={s.Swiper__reviews_title}>{name}</h3>
 			</div>
