@@ -80,6 +80,12 @@
 	top: 18px;
 }
 
+.formik__textarea {
+	resize: vertical;
+	min-height: 100px;
+	font-family: inherit;
+}
+
 @media screen and (min-width: 768px) {
 	.container__form {
 		width: 100%;

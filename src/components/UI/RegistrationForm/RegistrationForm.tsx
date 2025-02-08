@@ -6,34 +6,26 @@ import toast, { Toaster } from "react-hot-toast";
 interface FormValues {
 	name: string;
 	email: string;
-	number: string;
+	message: string;
 }
 
 export default function RegistrationForm() {
 	const initialValues: FormValues = {
 		name: "",
 		email: "",
-		number: "",
+		message: "",
 	};
 
-	const onlyWords = /^[a-zA-Z]+$/;
-	const phoneNumberRules =
-		// /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
-		// /^(\+48|\+380|\+49|\+44)?[-\s]?\(?\d{2,4}\)?[-\s]?\d{3}[-\s]?\d{2,4}[-\s]?\d{0,4}$/;
-		// /^(\+48\d{9}|\+380\d{9}|\+49\d{10}|\+44\d{10})$/;
-		/^(\+48\d{9}|\+380\d{9})$/;
+	const onlyWords = /^[a-zA-Zа-яА-ЯіІєЄїЇ]+$/;
 
 	const req = [
 		{ p0: "ТІЛЬКИ СЛОВА!" },
 		{ p1: "Мінімум 3 символа!" },
 		{ p2: "Максимум 30 символів!" },
 		{ p3: "Це поле обов'язкове!" },
-		{ p4: "Не коректрий Email!" },
+		{ p4: "Не коректний Email!" },
 		{ p5: "Введіть коректну email-адресу!" },
-		{ p6: "Не коректрий номер телефону!" },
-		{
-			p7: "Ведіть номер в форматі +380123456789 без пробілів!",
-		},
+		{ p6: "Повідомлення повинно містити від 10 до 500 символів!" },
 	];
 
 	const orderSchema = Yup.object().shape({
@@ -43,9 +35,10 @@ export default function RegistrationForm() {
 			.max(30, `${req[2].p2}`)
 			.required(`${req[3].p3}`),
 		email: Yup.string().email(`${req[4].p4}`).required(`${req[5].p5}`),
-		number: Yup.string()
-			.matches(phoneNumberRules, { message: `${req[6].p6}` })
-			.required(`${req[7].p7}`),
+		message: Yup.string()
+			.min(10, `${req[6].p6}`)
+			.max(500, `${req[6].p6}`)
+			.required(`${req[3].p3}`),
 	});
 
 	const handleAdd = async (
@@ -60,14 +53,14 @@ export default function RegistrationForm() {
 			});
 
 			if (response.ok) {
-				toast.success("Сообщение успешно отправлено!");
+				toast.success("Повідомлення успішно відправлено!");
 				resetForm();
 			} else {
-				toast.error("Ошибка при отправке сообщения.");
+				toast.error("Помилка при відправці повідомлення.");
 			}
 		} catch (error) {
-			console.error("Ошибка отправки:", error);
-			toast.error("Ошибка при отправке сообщения.");
+			console.error("Помилка відправки:", error);
+			toast.error("Помилка при відправці повідомлення.");
 		}
 	};
 
@@ -75,7 +68,7 @@ export default function RegistrationForm() {
 		<div className={s.container__form}>
 			<div className={s.container__title}>
 				<h2 className={s.formik__title}>
-					Заповніть форму і ми Вам зателефонуємо!
+					Заповніть форму і ми вам зателефонуємо!
 				</h2>
 			</div>
 
@@ -106,14 +99,15 @@ export default function RegistrationForm() {
 						<ErrorMessage name="email" component="p" className={s.error} />
 					</label>
 					<label className={s.label}>
-						<p className={s.formik__name_label}>Номер телефону:</p>
+						<p className={s.formik__name_label}>Повідомлення:</p>
 						<Field
-							className={s.formik__input}
-							type="tel"
-							name="number"
-							placeholder="Вкажіть свій номер телефону!"
+							className={`${s.formik__input} ${s.formik__textarea}`}
+							as="textarea"
+							name="message"
+							placeholder="Введіть своє повідомлення..."
+							rows={5}
 						/>
-						<ErrorMessage name="number" component="p" className={s.error} />
+						<ErrorMessage name="message" component="p" className={s.error} />
 					</label>
 					<button className={s.formik__btn} type="submit">
 						Залишити Заявку

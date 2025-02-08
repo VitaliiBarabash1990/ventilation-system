@@ -32,7 +32,14 @@ const Accord = () => {
 							}
 						>
 							{item.title}
-							<svg className={s.button_icon}>
+							<svg
+								// className={s.button_icon}
+								className={
+									activeIndex === index
+										? `${s.button_icon}`
+										: `${s.button_icon_top}`
+								}
+							>
 								<title>button_errow</title>
 								<image
 									href="/arrow_top.svg"

@@ -117,6 +117,9 @@
 	.Footer__section_footer_text {
 		margin-bottom: 28px;
 	}
+	.Footer__section_title {
+		font-size: 20px;
+	}
 	.Footer__section_descr_item {
 		max-width: 508px;
 	}

@@ -115,15 +115,18 @@
 }
 
 @media screen and (min-width: 375px) {
-	.button_icon {
+	.button_icon,
+	.button_icon_top {
 		display: block;
 		width: 23px;
 		height: 23px;
 		position: absolute;
 		right: 25px;
+		transition-duration: 400ms;
 	}
-	.Services__section_acord_button_mob:focus .button_icon {
+	.button_icon_top {
 		rotate: 180deg;
+		transition-duration: 400ms;
 	}
 }
 @media screen and (min-width: 1280px) {
