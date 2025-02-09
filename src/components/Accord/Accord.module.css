@@ -114,6 +114,10 @@
 	margin: 0 auto;
 }
 
+.button_icon_top {
+	display: none;
+}
+
 @media screen and (min-width: 375px) {
 	.button_icon,
 	.button_icon_top {
@@ -127,6 +131,10 @@
 	.button_icon_top {
 		rotate: 180deg;
 		transition-duration: 400ms;
+	}
+	.Services__section_acord_button_mob {
+		padding-left: 45px;
+		padding-right: 45px;
 	}
 }
 @media screen and (min-width: 1280px) {
