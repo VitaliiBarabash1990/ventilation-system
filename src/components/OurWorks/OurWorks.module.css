@@ -26,7 +26,6 @@
 
 .reviewCard {
 	background: white;
-	box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.9);
 	border-radius: 12px;
 	padding: 20px;
 	text-align: center;
@@ -49,6 +48,12 @@
 }
 .right {
 	rotate: 180deg;
+}
+
+.modal_image {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 375px) {

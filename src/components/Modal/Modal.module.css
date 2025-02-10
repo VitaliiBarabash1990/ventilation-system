@@ -17,6 +17,7 @@
 	width: calc(100% - 32px);
 	max-width: 343px;
 	border-radius: 29px;
+	z-index: 999;
 }
 .content h1 {
 	font-size: 2rem;

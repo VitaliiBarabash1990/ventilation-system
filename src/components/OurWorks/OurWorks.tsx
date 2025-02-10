@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -9,8 +9,23 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import s from "./OurWorks.module.css";
 import imgs from "./imgs.json";
+import Modal from "../Modal/Modal";
+import Image from "next/image";
 
 const CustomSwiper = () => {
+	const [isOpenModal, setIsOpenModal] = useState(false);
+	const [selectedImage, setSelectedImage] = useState<string | undefined>();
+
+	const openModal = (image: string) => {
+		setSelectedImage(image);
+		setIsOpenModal(true);
+	};
+
+	const closeModal = () => {
+		setSelectedImage(undefined);
+		setIsOpenModal(false);
+	};
+
 	return (
 		<div id="OurWorks" className={`section ${s.OurWorks__section}`}>
 			<div className="container">
@@ -35,7 +50,10 @@ const CustomSwiper = () => {
 					>
 						{imgs.map((img, index) => (
 							<SwiperSlide key={index} className={s.slide}>
-								<div className={s.reviewCard}>
+								<div
+									className={s.reviewCard}
+									onClick={() => openModal(img.img2x)}
+								>
 									<picture>
 										<source srcSet={img.img1x} type="image/jpeg" />
 										<img src={img.img2x} alt="workers" className={s.photo} />
@@ -56,6 +74,24 @@ const CustomSwiper = () => {
 						</svg>
 					</button>
 				</div>
+
+				{isOpenModal && (
+					<Modal close={closeModal}>
+						{/* <img
+							src={selectedImage}
+							alt="selectedImage"
+							className={s.modal_image}
+						/> */}
+
+						<Image
+							src={selectedImage}
+							alt="selectedImage"
+							width={200}
+							height={100}
+							className={s.modal_image}
+						/>
+					</Modal>
+				)}
 			</div>
 		</div>
 	);
