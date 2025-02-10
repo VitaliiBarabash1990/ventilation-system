@@ -6,6 +6,9 @@ import BaseLayout from "@/components/BaseLayout/BaseLayout";
 export const metadata: Metadata = {
 	title: "Ventilation system",
 	description: "Installation of ventilation and air conditioning systems",
+	icons: {
+		icon: "/ventilation.png",
+	},
 };
 
 export default function RootLayout({

@@ -7,7 +7,6 @@ import RegistrationForm from "../UI/RegistrationForm/RegistrationForm";
 
 const Hero = () => {
 	const [isOpenModal, setIsOpenModal] = useState(false);
-	console.log("isOpenModal", isOpenModal);
 	const toggleModal = () => {
 		setIsOpenModal((prev) => !prev);
 	};
