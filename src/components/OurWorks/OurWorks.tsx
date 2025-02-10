@@ -77,14 +77,8 @@ const CustomSwiper = () => {
 
 				{isOpenModal && (
 					<Modal close={closeModal}>
-						{/* <img
-							src={selectedImage}
-							alt="selectedImage"
-							className={s.modal_image}
-						/> */}
-
 						<Image
-							src={selectedImage}
+							src={selectedImage as string}
 							alt="selectedImage"
 							width={200}
 							height={100}
