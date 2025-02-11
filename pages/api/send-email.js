@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 		return res.status(405).json({ message: "Method not allowed" });
 	}
 
-	const { name, email, message } = req.body;
+	const { name, number, message } = req.body;
 
 	// Настройка транспортера Nodemailer
 	const transporter = nodemailer.createTransport({
@@ -23,9 +23,9 @@ export default async function handler(req, res) {
 			from: process.env.SMTP_FROM, // Отправитель
 			to: process.env.SMTP_FROM, // Получатель
 			subject: `Сообщение от ${name}`, // Тема письма
-			text: `Имя: ${name}\nEmail: ${email}\nСообщение: ${message}`, // Текст письма
+			text: `Имя: ${name}\nНомер телефону: ${number}\nСообщение: ${message}`, // Текст письма
 			html: `<p><strong>Имя:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
+             <p><strong>Номер телефону:</strong> ${number}</p>
              <p><strong>Сообщение:</strong> ${message}</p>`, // HTML-версия
 		});
 
