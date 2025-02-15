@@ -11,7 +11,7 @@
 .content {
 	position: relative;
 	background-color: var(--white);
-	padding: 29px 29px;
+	padding: 49px 29px;
 	overflow: hidden;
 	border-radius: 5px;
 	width: calc(100% - 32px);

@@ -1,5 +1,5 @@
 .container__form {
-	min-width: calc(100% - 40px);
+	min-width: calc(100% - 58px);
 }
 .formik__title {
 	font-family: var(--font-family);
@@ -46,8 +46,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	/* gap: 24px; */
-	/* margin-top: 42px; */
 }
 .formik__btn {
 	background: var(--background-button);
@@ -82,7 +80,7 @@
 	font-family: inherit;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 375px) {
 	.form {
 		margin-top: 42px;
 		gap: 24px;
