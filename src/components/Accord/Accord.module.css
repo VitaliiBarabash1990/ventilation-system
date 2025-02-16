@@ -137,6 +137,12 @@
 		padding-right: 45px;
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.Services__section_acord_title {
+		margin-bottom: 32px;
+	}
+}
 @media screen and (min-width: 1280px) {
 	.Services__section_acord {
 		width: 100%;
@@ -184,6 +190,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 59px 79px;
+		padding-bottom: 165px;
 		text-align: left;
 		gap: 40px;
 	}
@@ -217,10 +224,12 @@
 		background: #3b82f6;
 	}
 	.Services__section_acord_descr {
-		width: 70%;
+		width: 60%;
 	}
 	.Services__section_acord_image {
-		width: 30%;
+		position: relative;
+		width: 40%;
+		top: 45px;
 	}
 	.Services__section_icon {
 		display: flex;

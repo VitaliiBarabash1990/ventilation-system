@@ -17,7 +17,6 @@ export default function RegistrationForm() {
 	};
 
 	const onlyWords = /^[a-zA-Zа-яА-ЯіІєЄїЇ]+$/;
-	// const phoneNumberRules = /^(\+48\d{9}|\+380\d{9})$/;
 	const phoneNumberRules = /^(\+380\d{9})$/;
 
 	const req = [

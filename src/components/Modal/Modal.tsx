@@ -16,7 +16,7 @@ const Modal = ({ children, close }: ModalProps) => {
 	}, []);
 
 	if (!modalRoot) {
-		return null; // Пока modalRoot не найден, ничего не рендерим
+		return null;
 	}
 
 	return ReactDOM.createPortal(

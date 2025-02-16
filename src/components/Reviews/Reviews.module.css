@@ -5,13 +5,26 @@
 .Reviews__section_title {
 	font-family: var(--third-family);
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 24px;
 	text-align: center;
 	color: #232323;
 	margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+	.Reviews__section_title {
+		font-size: 32px;
+	}
+}
 @media screen and (min-width: 1280px) {
 	.Reviews__section_title {
 		margin-bottom: 0;
+	}
+	.Reviews__section_title {
+		font-size: 36px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.Reviews__section_title {
+		font-size: 40px;
 	}
 }

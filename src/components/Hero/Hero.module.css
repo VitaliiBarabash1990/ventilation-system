@@ -4,6 +4,7 @@
 	font-size: 24px;
 	color: var(--white);
 	text-align: left;
+	letter-spacing: -0.08em;
 	margin-bottom: 20px;
 }
 .Hero__section_text {
@@ -162,7 +163,7 @@
 @media screen and (min-width: 1280px) {
 	.Hero__section {
 		top: -100px;
-		padding-top: 116px;
+		padding-top: 166px;
 	}
 	.Hero__section_wraper {
 		max-width: 1184px;
@@ -182,6 +183,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+	.Hero__section {
+		padding-top: 196px;
+	}
 	.Hero__section_title {
 		font-size: 48px;
 		margin-bottom: 24px;
@@ -244,7 +248,7 @@
 		right: 0;
 	}
 	.Hero__section_img {
-		/* top: 95px; */
+		top: 20px;
 		min-width: 518px;
 		/* right: 0;
 		width: 55%; */

@@ -178,6 +178,9 @@
 		width: calc(100% - 64px);
 		max-width: 800px;
 	}
+	.swiper {
+		padding-bottom: 62px;
+	}
 	.reviewCard {
 		max-width: calc(100% - 80px);
 	}
@@ -204,7 +207,7 @@
 	.sliderContainer {
 		min-width: calc(100% - 96px);
 		padding-top: 48px;
-		padding-bottom: 40px;
+		/* padding-bottom: 40px; */
 	}
 	.stars {
 		gap: 0;

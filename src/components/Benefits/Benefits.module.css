@@ -38,8 +38,8 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 16px;
-	padding-top: 48px;
-	padding-bottom: 48px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	max-width: 468px;
 	margin: 0 auto;
 }
@@ -102,6 +102,10 @@
 	}
 	.Benefits__section_item {
 		height: 319px;
+	}
+	.Benefits__section_list {
+		padding-top: 48px;
+		padding-bottom: 48px;
 	}
 	.Benefits__section_item_icon {
 		width: 60px;

@@ -5,7 +5,7 @@
 .Services__section_title {
 	font-family: var(--third-family);
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 24px;
 	text-align: center;
 	color: var(--text-title-color);
 	margin-bottom: 48px;
@@ -13,4 +13,19 @@
 .Services__section_wraper {
 	max-width: 1344px;
 	margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+	.Services__section_title {
+		font-size: 32px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.Services__section_title {
+		font-size: 36px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.Services__section_title {
+		font-size: 40px;
+	}
 }
